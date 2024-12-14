@@ -1,0 +1,129 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="max-age=3600">
+    <title>南极中微子</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        #container {
+            width: 800px;
+            margin: 20px;
+            position: relative;
+        }
+
+        #title {
+            text-align: left;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        #player {
+            width: 800px;
+            height: 450px;
+            background-color: #000;
+        }
+
+        #button-row {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            position: relative;
+            top: 0;
+        }
+
+        #likeButton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: white;
+            color: skyblue;
+            border: 1px solid skyblue;
+            padding: 5px;
+            margin-right: 5px;
+        }
+
+        #coinButton,
+        #collectButton,
+        #shareButton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: white;
+            color: skyblue;
+            border: 1px solid skyblue;
+            padding: 5px;
+            margin-right: 5px;
+        }
+
+     .close-btn {
+            cursor: pointer;
+            color: #f00;
+            float: right;
+            font-size: 18px;
+        }
+
+     .bold {
+            font-weight: bold;
+        }
+
+     .blue {
+            color: darkblue;
+        }
+
+     .small-text {
+            font-size: 14px;
+        }
+
+     .divider {
+            border-top: 1px solid #ccc;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="title">【宇宙杂谈】南极发现平行宇宙证据？南极中微子异常事件！</div>
+        <div id="player"></div>
+        <div id="button-row">
+            <button id="likeButton">点赞</button>
+            <button id="coinButton">投币</button>
+            <button id="collectButton">收藏</button>
+            <button id="shareButton">转发</button>
+        </div>
+        <hr class="divider">
+        <p>2006年，NASA在南极洲开展了一项名为“南极脉冲瞬态天线（ANITA）”的实验项目。在复查实验数据时，研究人员在先前被当作噪声的数据中发现了一个特殊的信号……</p>
+    </div>
+    <script src="https://player.polyv.net/script/player.js"></script>
+    <script>
+        var player;
+
+        function initPlayer() {
+            player = polyvPlayer({
+                wrap: '#player',
+                width: '100%',
+                height: 450,
+                vid: 'g9e4d2587129760948187bebd901be35_g'
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', initPlayer);
+    </script>
+
+</body>
+</html>
